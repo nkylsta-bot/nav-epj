@@ -3,6 +3,7 @@ import { Badge } from "./Badge";
 import { Button } from "./Button";
 import { CancelDialog } from "./CancelDialog";
 import { Card } from "./Card";
+import { ConsultationDocuments } from "./ConsultationDocuments";
 import { DiagnosisCombobox } from "./DiagnosisCombobox";
 import { FinishDialog } from "./FinishDialog";
 import { Note } from "./Note";
@@ -76,6 +77,7 @@ export function OngoingConsultation({ patient, consultation }: Props) {
             readOnly={saving}
             onChange={(event) => setClinicalNote(event.target.value)}
           />
+          <ConsultationDocuments consultation={consultation} />
           <div className="xp-form-actions">
             <Button
               isDefault
