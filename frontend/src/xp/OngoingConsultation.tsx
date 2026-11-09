@@ -103,7 +103,8 @@ export function OngoingConsultation({ patient, consultation }: Props) {
             <Note tone="error" role="alert">
               {copy["s4.diag.mainRequired"]}
             </Note>
-          )}          <TextArea
+          )}
+          <TextArea
             label={copy["s4.note.label"]}
             rows={6}
             value={draft.clinicalNote}
