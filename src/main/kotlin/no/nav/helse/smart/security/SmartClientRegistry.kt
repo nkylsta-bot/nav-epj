@@ -5,7 +5,7 @@ import java.net.URI
 import tools.jackson.module.kotlin.jacksonObjectMapper
 import tools.jackson.module.kotlin.readValue
 
-private val LOCAL_HOSTS = setOf("localhost", "127.0.0.1")
+private val LOCAL_HOSTS = setOf("localhost", "127.0.0.1", "local.altinn.cloud")
 
 /**
  * Loads and validates the SMART client registry (step 7). Deployed environments provide the whole
